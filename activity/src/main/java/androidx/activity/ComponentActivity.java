@@ -148,6 +148,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mSavedStateRegistryController.performRestore(savedInstanceState);
+        //看到有一个注入的代码
         ReportFragment.injectIfNeededIn(this);
         if (mContentLayoutId != 0) {
             setContentView(mContentLayoutId);
