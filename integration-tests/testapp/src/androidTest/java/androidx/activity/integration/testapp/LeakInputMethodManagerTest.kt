@@ -23,7 +23,6 @@ import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.ComponentActivity
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule

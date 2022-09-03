@@ -30,7 +30,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * is enabled will it receive callbacks to {@link #handleOnBackPressed()}.
  * <p>
  * Note that the enabled state is an additional layer on top of the
- * {@link androidx.lifecycle.LifecycleOwner} passed to
+ * {@link LifecycleOwner} passed to
  * {@link OnBackPressedDispatcher#addCallback(LifecycleOwner, OnBackPressedCallback)}
  * which controls when the callback is added and removed to the dispatcher.
  * <p>
@@ -60,7 +60,7 @@ public abstract class OnBackPressedCallback {
      * is enabled will it receive callbacks to {@link #handleOnBackPressed()}.
      * <p>
      * Note that the enabled state is an additional layer on top of the
-     * {@link androidx.lifecycle.LifecycleOwner} passed to
+     * {@link LifecycleOwner} passed to
      * {@link OnBackPressedDispatcher#addCallback(LifecycleOwner, OnBackPressedCallback)}
      * which controls when the callback is added and removed to the dispatcher.
      *
