@@ -61,7 +61,6 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     private final LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);
     private final SavedStateRegistryController mSavedStateRegistryController =
             SavedStateRegistryController.create(this);
-
     // Lazily recreated from NonConfigurationInstances by getViewModelStore()
     private ViewModelStore mViewModelStore;
 
@@ -180,6 +179,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         if (viewModelStore == null) {
             // No one called getViewModelStore(), so see if there was an existing
             // ViewModelStore from our last NonConfigurationInstance
+            //如果viewmodelstore为null，则从NonConfigurationInstance来找
             NonConfigurationInstances nc =
                     (NonConfigurationInstances) getLastNonConfigurationInstance();
             if (nc != null) {
